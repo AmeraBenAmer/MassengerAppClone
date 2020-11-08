@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.ChatFragment"
+    android:background="@color/colorPrimary">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <EditText
+        android:id="@+id/edit_view_text_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints="@string/search_people_message"
+        android:background="@drawable/background_search_edit_text"
+        android:hint="@string/search_people_message"
+        android:paddingStart="40dp"
+        android:paddingTop="12dp"
+        android:layout_marginTop="16dp"
+        android:paddingEnd="32dp"
+        android:paddingBottom="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_search_view"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:contentDescription="@string/search_people_message"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_view_text_message"
+        app:layout_constraintEnd_toEndOf="@+id/edit_view_text_message"
+        app:layout_constraintHorizontal_bias="0.028"
+        app:layout_constraintStart_toStartOf="@+id/edit_view_text_message"
+        app:layout_constraintTop_toTopOf="@+id/edit_view_text_message"
+        app:layout_constraintVertical_bias="0.541"
+        app:layout_editor_absoluteX="25dp"
+        app:layout_editor_absoluteY="25dp"
+        app:srcCompat="@drawable/ic_search" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chat_recycle_view_message"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_view_text_message"
+        tools:listitem="@layout/recycler_view_item"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

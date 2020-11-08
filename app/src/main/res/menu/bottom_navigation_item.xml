@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_chat_item"
+        android:icon="@drawable/ic_chat"
+        android:title="@string/chat"
+        >
+    </item>
+
+    <item
+        android:id="@+id/navigation_people_item"
+        android:icon="@drawable/ic_people"
+        android:title="@string/people"
+        >
+    </item>
+
+    <item
+        android:id="@+id/navigation_more_item"
+        android:icon="@drawable/ic_more_horiz"
+        android:title="@string/more"
+        >
+    </item>
+
+</menu>
