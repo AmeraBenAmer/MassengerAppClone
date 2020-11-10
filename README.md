@@ -1,2 +1,2 @@
 # MassengerAppClone
- Kotlin, Glide, Groupie, Firebase
+ Kotlin, Glide, Groupie, Firebase. recycleview
